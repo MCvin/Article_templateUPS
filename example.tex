@@ -15,8 +15,7 @@
 % The Current Maintainer of this work is T. GREGOIRE
 %
 
-\documentclass[a4paper]{article}
-% \documentclass{book}
+\documentclass{book}
 
 % Loading the tlsflyleaf.sty package require some option to define the
 % establishment name, the doctoral school and the PhD speciality.
@@ -26,8 +25,8 @@
 %   - ED2=<value> : define the second speciality ("double mention"). OPTIONAL.
 % The full list of accepted values for each option could be find either
 % in the documentation or in ED-list.txt and Ets-list.txt files provide with the package.
-\usepackage[ED=BSB-Immu, Ets=UT3]{tlsflyleaf}
-%\usepackage[ED=SDU2E-Ast, ED2=SDU2E-Eco, Ets=UT3]{tlsflyleaf}
+\usepackage[ED=SDU2E-Ast, Ets=UT3]{tlsflyleaf}
+\usepackage[utf8]{inputenc}
 
 % ==================
 % Setup basic string
@@ -36,10 +35,11 @@
 % - defence date
 % - laboratory
 % - cotutelle
-\title{\textbf{\large L'acn\'e : une m\'esentente entre \textit{P.acnes} et le syst\`eme immunitaire ?}}
-\author{Yoan ELIASSE}
-\defencedate{10 avril 2019}
-\lab{Centre de Recherches en Canc\'erologie de Toulouse (INSERM UMR 1037, \'Equipe 20) }
+\title{\textbf{\large Simulation d'un télescope Wolter-I grande focale pour l'astronomie X-dur : application aux projets spatiaux Simbol-X et PheniX}}
+\author{Maxime CHAUVIN}
+\defencedate{28/02/2011}
+\lab{Institut de Recherche en Astrophysique et Plan\'etologie (UMR 5277)}
+%\cotutelle{Nom de l'\'etablissement}
 
 % ==================
 % Setup people like your boss, the jury team and the referees
@@ -56,34 +56,23 @@
 %     <status>   Is (s)he a "charg\'e de recher" ou un "professeur d'universit\'e"...
 %     <other>    What ever string you want to add (laboratory, jury member place...).
 %% Boss
-\nboss{1}
-%makesomeone{boss}{2}{Jean-Albert LOTTERIE}{}{}  % Sera affiche en second
-\makesomeone{boss}{1}{Eric ESPINOSA}{}{} % Sera afiche en premier
+\nboss{2}
+\makesomeone{boss}{2}{Second DIRECTEUR}{}{}  % Sera affiche en second
+\makesomeone{boss}{1}{Premier DIRECTEUR}{}{} % Sera afiche en premier
 %% Referee
-\nreferee{3}
-\makesomeone{referee}{1}{Franck MOREL}{}{}
-\makesomeone{referee}{2}{Katia BONIFACE}{}{}
-\makesomeone{referee}{3}{Marc VOCANSON}{}{}
+\nreferee{2}
+\makesomeone{referee}{1}{Premier RAPPORTEUR}{}{}
+\makesomeone{referee}{2}{Second RAPPORTEUR}{}{}
 %% Judges
-\njudge{6}
-
-\makesomeone{judge}{1}{Maha AYYOUB}{PU-PH, Universit\'e Toulouse III}{Pr\'esidente du Jury}
-\makesomeone{judge}{2}{Franck MOREL}{PU, Universit\'e de Poitiers}{Rapporteur}
-\makesomeone{judge}{3}{Katia BONIFACE}{MCF, BMGIC Bordeaux}{Rapporteure}
-\makesomeone{judge}{4}{Marc VOCANSON}{CR, CIRI Lyon}{Rapporteur}
-\makesomeone{judge}{5}{Salvatore VALITUTTI}{DR INSERM, CRCT Toulouse}{Examinateur}
-\makesomeone{judge}{6}{Eric ESPINOSA}{MCF, Universit\'e Toulouse III}{Directeur de th\`ese}
-
-%makesomeone{judge}{7}{Jean-Albert LOTTERIE}{PH, CHU Toulouse}{Co-directeur}
-
+\njudge{5}
+\makesomeone{judge}{1}{Premier MEMBRE}{Professeur d'Universit\'e}{Pr\'esident du Jury}
+\makesomeone{judge}{2}{Second MEMBRE}{Astronome Adjoint}{Membre du Jury}
+\makesomeone{judge}{3}{Troisi\`eme MEMBRE}{Charg\'e de Recherche}{Membre du Jury}
+\makesomeone{judge}{4}{Quatri\`eme MEMBRE}{Charg\'e de Recherche}{Membre du Jury}
+\makesomeone{judge}{5}{Cinqui\`eme MEMBRE}{Charg\'e de Recherche}{Membre du Jury}
 
 % ============================================================
 % DOCUMENT
 \begin{document}
     \makeflyleaf
-    \newpage
-    \strut
-    \thispagestyle{empty}
-    %\addtocounter{page}{null}
-    \newpage
 \end{document}
